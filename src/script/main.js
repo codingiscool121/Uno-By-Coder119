@@ -757,7 +757,6 @@ var Home = (function(main){
     divMain.append(js('<div class="card" color="green" value="3"><div value="3"></div></div>'));
 
     contant.append(js('<div class="title" value="UNO"></div>'));
-
     var btt = js('<div class="bttNewGame">Start Game</div>');
     btt.on('click', function(){
       divMain.removeClass("active");
@@ -803,7 +802,7 @@ var GameOver = (function(main){
     contant.append(js('<h1>The Game Has Ended</h1>'));
 
     if(winner){
-      contant.append(js('<h2>Congratulations, you won!</h2>'));
+      contant.append(js('<h2>You have won this game. Woohoo!</h2>'));
     }else{
       contant.append(js('<h2>You lost. Click the below button to play again.</h2>'));
     }
